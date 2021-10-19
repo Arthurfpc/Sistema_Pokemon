@@ -3,7 +3,7 @@ class Pokemon:
         self.__id = int(id)
         self.__nome = str(nome)
         self.__tipo = str(tipo)
-        self.__evolucoes = str(evolucoes)
+        self.__evolucoes = list(evolucoes)
         self.__descricao = str(descricao)
 
     @property
