@@ -7,6 +7,10 @@ class Pokemon:
         self.__descricao = str(descricao)
 
     @property
+    def id(self):
+        return self.__id
+    
+    @property
     def nome(self):
         return self.__nome
     
@@ -24,10 +28,9 @@ class Pokemon:
 
     def __str__(self):
         return f''' 
-        Nome: {self.__nome}
-        Tipo: {self.__tipo}
-        Evoluções: {self.__evolucoes}
-        Descrição: {self.__descricao}
+        Detalhes Do Pokémon:
+            Nome: {self.__nome}
+            Tipo: {self.__tipo}
+            Evoluções: {self.__evolucoes}
+            Descrição: {self.__descricao}
         '''
-novopokemon = Pokemon(1, "Greninja", "Água", "Frog", "É ISSO")
-print(novopokemon)
